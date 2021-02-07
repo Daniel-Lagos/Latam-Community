@@ -1,3 +1,10 @@
+:root{
+  --primary-color: #05668d;
+  --secondary-color:#028090;
+  --blur-primary-color: rgba(5,102,141,1);
+  --dark-color: #333;
+}
+
 html,
 body {
   padding: 0;
