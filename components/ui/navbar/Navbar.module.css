@@ -1,14 +1,14 @@
-.navbar{
-    position:  fixed;
+.navbar {
+    position: fixed;
     top: 0;
     width: 100%;
     background-color: var(--blur-primary-color);
-    box-shadow: 3px 3px 10px #333;
+    box-shadow: 3px 3px 13px var(--dark-color);
     backdrop-filter: blur(8px);
-    padding: 20px;
+    padding: 25px;
 }
 
-.elements{
+.elements {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,7 +18,7 @@
     margin: 0 auto;
 }
 
-.elements span{
+.elements span {
     font-weight: bold;
     font-size: 20px;
     border: 3px solid var(--dark-color);
@@ -30,22 +30,23 @@
     margin-right: 10px;
 }
 
-.text{
+.text {
     text-shadow: 2px 2px 0 var(--primary-color);
 }
 
-.title{
+.title {
     flex-grow: 3;
 }
 
-@media screen and (max-width: 768px){
-    .title{
+@media screen and (max-width: 768px) {
+    .title {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .how,
-    .about{
+    .about {
         display: none;
     }
 }
