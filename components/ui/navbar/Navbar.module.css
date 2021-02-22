@@ -9,16 +9,15 @@
 }
 
 .elements {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
     max-width: 960px;
     padding: 0 .8rem;
     margin: 0 auto;
+    grid-column-gap: 1rem;
 }
 
-.elements span {
+.title, .how, .about{
     font-weight: bold;
     font-size: 20px;
     border: 3px solid var(--dark-color);
@@ -27,18 +26,24 @@
     box-shadow: 4px 4px 13px #333;
     color: #333;
     padding: 10px;
+    text-align: center;
     margin-right: 10px;
+    transition: transform 1s;
 }
 
-.text {
+.title:hover, .how:hover , .about:hover{
+    transform: scale(1.2);
+}
+
+.elements a {
     text-shadow: 2px 2px 0 var(--primary-color);
 }
 
 .title {
-    flex-grow: 3;
+    justify-self: start;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
     .title {
         display: flex;
         justify-content: center;

@@ -1,39 +1,36 @@
 import Link from "next/link";
-import {mdiControllerClassic, mdiGamepad} from "@mdi/js";
 
 import styles from './Navbar.module.css';
-import Icon from "@mdi/react";
 
-let Navbar = () => {
-    let control = <Icon
-        size={1}
-        path={mdiGamepad}
-        color={'#f0f3bd'}
-    />;
+const Pages = (props) => {
+    return (
+        <Link href={props.urlName}>
+            <a>
+                {props.text}
+            </a>
+        </Link>
+    );
+}
+
+const Navbar = () => {
+
+    let title=<Pages urlName={'/'} text={'🎮 Comunidad LATAM 🎮'}/>;
+
+    let how=<Pages urlName={'/how'} text={'¿Como unirse?'}/>;
+
+    let about=<Pages urlName={'/about'} text={'Sobre nosotros'}/>;
 
     return (
         <div className={styles.navbar}>
             <div className={styles.elements}>
                 <div className={styles.title}>
-                    <Link href={'/'}>
-                        <a className={styles.text}>
-                            <span>🎮 Comunidad LATAM 🎮</span>
-                        </a>
-                    </Link>
+                    {title}
                 </div>
                 <div className={styles.how}>
-                    <Link href={'/'}>
-                        <a className={styles.text}>
-                            <span> ¿Como unirse? </span>
-                        </a>
-                    </Link>
+                    {how}
                 </div>
                 <div className={styles.about}>
-                    <Link href={'/'}>
-                        <a className={styles.text}>
-                            <span> Sobre nosotros </span>
-                        </a>
-                    </Link>
+                    {about}
                 </div>
             </div>
         </div>
