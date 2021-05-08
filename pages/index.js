@@ -1,11 +1,10 @@
-import Head from 'next/head'
-import Navbar from "../components/ui/navbar/Navbar";
+import Layout from "../components/ui/layout/Layout";
 
 let Home =()=> {
     return (
-        <>
-            <Navbar/>
-        </>
+        <Layout title={'COMUNIDAD LATAM'}>
+
+        </Layout>
     )
 }
 export default Home;

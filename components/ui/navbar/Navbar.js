@@ -14,7 +14,7 @@ const Pages = (props) => {
 
 const Navbar = () => {
 
-    let title=<Pages urlName={'/'} text={'🎮 Comunidad LATAM 🎮'}/>;
+    let title=<Pages urlName={'/'} text={'COMUNIDAD LATAM'}/>;
 
     let how=<Pages urlName={'/how'} text={'¿Como unirse?'}/>;
 
@@ -22,14 +22,23 @@ const Navbar = () => {
 
     return (
         <div className={styles.navbar}>
-            <div className={styles.elements}>
+            <div className={styles.content}>
                 <div className={styles.title}>
                     {title}
                 </div>
-                <div className={styles.how}>
+                <div className={styles.two}>
                     {how}
                 </div>
-                <div className={styles.about}>
+                <div className={styles.two}>
+                    {about}
+                </div>
+                <div className={styles.two}>
+                    {about}
+                </div>
+                <div className={styles.two}>
+                    {about}
+                </div>
+                <div className={styles.two}>
                     {about}
                 </div>
             </div>

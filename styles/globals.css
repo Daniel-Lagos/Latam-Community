@@ -1,8 +1,8 @@
 :root{
-  --primary-color: #05668d;
-  --secondary-color:#028090;
-  --blur-primary-color: rgba(5,102,141,1);
-  --dark-color: #333;
+  --secondary-color: #6e5ed1;
+  --primary-color: #1c2343;
+  --dark-color: #4a4a76;
+  --font-nav: #ffffff;
 }
 
 html,

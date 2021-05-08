@@ -1,57 +1,46 @@
 .navbar {
     position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: var(--blur-primary-color);
+    width: 20%;
+    height: 100%;
+    background-color: var(--primary-color);
     box-shadow: 3px 3px 13px var(--dark-color);
-    backdrop-filter: blur(8px);
-    padding: 25px;
+    border-radius: 0 2rem 0 0;
 }
 
-.elements {
-    display: grid;
-    grid-template-columns: 2fr repeat(2, 1fr);
-    max-width: 960px;
-    padding: 0 .8rem;
-    margin: 0 auto;
-    grid-column-gap: 1rem;
-}
-
-.title, .how, .about{
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5em;
     font-weight: bold;
-    font-size: 20px;
-    border: 3px solid var(--dark-color);
-    border-radius: 10px;
-    background-color: var(--secondary-color);
-    box-shadow: 4px 4px 13px #333;
-    color: #333;
-    padding: 10px;
-    text-align: center;
-    margin-right: 10px;
-    transition: transform 1s;
-}
-
-.title:hover, .how:hover , .about:hover{
-    transform: scale(1.2);
-}
-
-.elements a {
-    text-shadow: 2px 2px 0 var(--primary-color);
 }
 
 .title {
-    justify-self: start;
+    padding: 2.5rem 0 2.5rem 4rem;
+    color: white;
+}
+
+.two {
+    padding: .5rem 0 .5rem 4rem;
+    color: var(--dark-color);
+    transition: 450ms all;
+}
+
+.two:hover{
+    background-color: var(--secondary-color);
+    color: var(--font-nav);
+    box-shadow: 0 2px 4px var(--dark-color),
+    0 -2px 4px var(--dark-color);
+}
+
+.two:active{
+    background-color: var(--secondary-color);
+    color: var(--font-nav);
+}
+.two:current{
+    background-color: var(--secondary-color);
 }
 
 @media screen and (max-width: 830px) {
-    .title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .how,
-    .about {
-        display: none;
-    }
 }
